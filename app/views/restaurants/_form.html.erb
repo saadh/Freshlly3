@@ -1,0 +1,99 @@
+<%= form_for(@restaurant) do |f| %>
+  <% if @restaurant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+
+      <ul>
+      <% @restaurant.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div id="page-wrapper">
+      <div id="absolute-wrapper">
+        <div class="div-1 div-2 div-3 div-8"></div>
+        <%= image_tag "crave-mini.png", :class => "image image-1 image-2" %>
+        <a class="dom-link dom-link-1 dom-link-5" href="#">Home</a>
+        <a class="dom-link dom-link-1 dom-link-6" href="#">Contact</a>
+
+        </div>
+        <div class="paragraph div-4 div-9">
+          <p>|</p>
+        </div>
+
+        <div class="dom-body-text paragraph div-5 div-10">
+          <p>Great food delivered.</p>
+        </div>
+        <div class="image div-1 div-3">
+          <div class="rectangle div-1"></div>
+          <h2 class="heading heading-1" id="subtitle">Give your customers the ultimate food experience, at home!</h2>
+          <h1 class="heading heading-1" id="title">Great food delivered.</h1>
+        </div>
+        <h1 class="heading heading-2 heading-3 heading-4">Who is Crave?</h1>
+        <div class="paragraph div-6 div-11">
+          <p>Crave curates the healthiest and tastiest meals from high quality restaurants like yours. We have a clientele of health conscious consumers that appreciate great food that's made in a healthy way. Our customers demand healthy takeout options instead
+            of fast food and processed meats. That's why we select the best dishes from quality restaurants and have them delivered to our customers, on demand. In addition, we also help customers find healthy options when they are out and about.&nbsp;</p>
+        </div>
+        <h1 class="heading heading-3 heading-5">How does it work?</h1>
+        <div class="paragraph div-2 div-6">
+          <p>We work with restaurants to identify the best and healthiest options on the menu. These items are then made available online to customers through our website and mobile app. When customers place an order, the restaurant receives notification. When the
+            food is ready, a member of the Crave team collects it from the restaurant and delivers to the customer. Simples!</p>
+        </div>
+        <h1 class="heading heading-2 heading-3 heading-6">Come join us!</h1>
+        <div class="paragraph div-6 div-12">
+          <p>Are you looking to expand your business into the delivery market? If you have healthy options on your menu, we'd love to hear from you. Just fill out the form below with your restaurant name, contact address and we'll be in touch.</p>
+        </div>
+
+        <form action="">
+            <div class="field">
+                <%= f.label :message, "Your Messages",  :class => "control-label control-label-1 control-label-3" %><br />
+                <%= f.text_area :message, :class => "textinput" %>
+            </div>
+
+            <div class="field">
+                <%= f.label :restaurant, "Restaurant Name",  :class => "control-label control-label-1 control-label-2" %><br />
+                <%= f.text_field :name, :class => "textinput textinput-1" %>
+            </div>
+
+            <div class="field">
+              <%= f.label :contact, "Contact Person", :class => "control-label control-label-2 control-label-4" %>
+              <%= f.text_field :contact, :class => "textinput textinput-2" %>
+            </div>
+
+            <div class="field">
+                <%= f.label :email, :class => "control-label control-label-2 control-label-5" %> 
+                <%= f.text_field :email, :class => "textinput textinput-3" %>
+            </div>
+            
+        </form>
+
+              <div class="actions">
+                  <%= f.submit :Submit, :class => "btn" %>
+              </div>
+              <% end %>
+                              
+        <img class="image image-1 image-3" src="images/crave-mini.png">
+        <div class="paragraph div-4 div-7 div-13">
+          <p>|</p>
+        </div>
+        <a class="dom-link dom-link-2 dom-link-3 dom-link-7" href="#">Privacy &amp; Terms</a>
+        <div class="paragraph div-4 div-7 div-14">
+          <p>|</p>
+        </div>
+        <div class="paragraph div-4 div-15">
+          <p>|</p>
+        </div>
+        <a class="dom-link dom-link-2 dom-link-3 dom-link-4" href="#">About</a>
+        <a class="dom-link dom-link-2 dom-link-3 dom-link-8" href="#">Home</a>
+        <a class="dom-link dom-link-2 dom-link-4 dom-link-9" href="#">Contact</a>
+        <div class="dom-body-text paragraph div-5 div-16">
+          <p>Great food delivered.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+  
