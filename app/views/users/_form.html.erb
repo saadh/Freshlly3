@@ -1,7 +1,8 @@
 <%= form_for @user do |f| %>
 
-    <div id="page-wrapper">
-      <div id="absolute-wrapper">
+<div id="page-wrapper">
+      <div id="absolute-wrapper">    
+
         <div class="image image-2">
           <div class="image"><%= image_tag "big-food2.jpg" %></div>
 
@@ -12,10 +13,12 @@
             <div class="dom-body-text paragraph paragraph-2 paragraph-4">
               <p>Sign Up now to be the first to try Crave!</p>
             </div>
-            <%= f.submit "Sign Up", :class => 'btn' %>
+            <a id="Sign Up NOW"><%= f.submit "Sign Up", :class => 'btn' %></a>
             
-            <%= f.text_field :postcode, :class => 'textinput textinput-1' %>
-            <%= f.text_field :email, :class => 'textinput textinput-2' %>
+            <%= f.text_field :postcode, :placeholder => "postcode", :class => 'textinput textinput-1' %>
+            <%= f.text_field :email, :placeholder => "email", :class => 'textinput textinput-2' %>
+
+            <% end %>
 
           
           </div>
@@ -26,10 +29,9 @@
             </div>
           
           <div class="paragraph paragraph-3 paragraph-15">
-            <p>|</p>
+            
           </div>
-          <a class="dom-link dom-link-1" href="#">Sign up for Crave</a>
-          <a class="dom-link dom-link-2" href="#">Contact</a>
+          
           <div class="dom-body-text paragraph paragraph-5 paragraph-6">
             <p>Great food delivered.</p>
           </div>
@@ -61,7 +63,7 @@
             <div class="image">
                 <%= image_tag "steelhead.jpg" %>
             </div>
-          
+
           <div class="dom-body-text paragraph paragraph-7 paragraph-11">
             <p>Easy doesn't have to be junk food. At Crave we curate the healthiest and tastiest meals from local restaurants. Order-in, put your feet up and prepare to be delighted! We're launching soon.</p>
           </div>
@@ -69,21 +71,9 @@
             <p>Sign Up now to be the first to try Crave!</p>
           </div>
 
-
-            <% #= f.text_field :email, :value => "email address", :class => "textinput" %>
-            
-            <%= f.submit "Sign Up", :class => "btn btn-large" %>
-
-            <% end %>
-          
-          
         </div>
-        <h2 class="heading heading-1 heading-4">Quick, healthy meals in minutes</h2>
-<i class="icon icon-pencil"></i>
-
-<i class="icon icon-truck"></i>
-
-<i class="icon icon-star"></i>
+        
+<h2 class="heading heading-1 heading-4"><br /><br />Quick, healthy meals in minutes</h2>
 
         <h2 class="heading heading-2 heading-5">Same day ordering</h2>
         <div class="dom-body-text paragraph paragraph-7 paragraph-8 paragraph-9 paragraph-12">
@@ -100,10 +90,16 @@
         <div class="rectangle rectangle-1 rectangle-2 rectangle-3 rectangle-4 rectangle-9">
           <h2 class="heading heading-1">Eager to try Crave right away?</h2>
           <div class="dom-body-text paragraph paragraph-7 paragraph-8">
-            <p>We are currently testing our service with a select group of customers in Edinburgh. If you would like to be a part of this group and help us in testing out our&nbsp;service before launch, please Register for a trial.</p>
+            <p>We are currently testing our service with a select group of customers in Edinburgh. If you would like to be a part of this group and help us in testing out our&nbsp;service before launch, please send us an email.</p>
+            <p>
+              info@eatcrave.co.uk
+            </p>
+
           </div>
-          <button class="btn"><strong>REGISTER FOR TRIAL &gt;&gt;</strong>
-          </button>
+          
+        </div>          
+
+          
         </div>
         <div class="image image-1 image-4">
             <div class="image-4">
@@ -112,29 +108,14 @@
         </div>
 
         
-        <div class="dom-body-text paragraph paragraph-7 paragraph-14">
-          <p>@eatcrave</p>
-        </div>
-        
-            <%= image_tag "twitter-icon.png", :class => "icon icon-twitter" %>
+                    
           
         
 
         <div class="dom-body-text paragraph paragraph-5 paragraph-6 paragraph-7">
           <p>Great food delivered.</p>
         </div>
-        <a class="dom-link dom-link-3 dom-link-4 dom-link-5 dom-link-6" href="#">About</a>
-        <div class="paragraph paragraph-15 paragraph-16 paragraph-17 paragraph-18">
-          <p>|</p>
-        </div>
-        <a class="dom-link dom-link-3 dom-link-5 dom-link-7" href="#">Privacy &amp; Terms</a>
-        <div class="paragraph paragraph-15 paragraph-16 paragraph-17 paragraph-19">
-          <p>|</p>
-        </div>
-        <a class="dom-link dom-link-3 dom-link-8" href="#">For Restaurants</a>
-        <div class="paragraph paragraph-15 paragraph-16 paragraph-20">
-          <p>|</p>
-        </div>
-        <a class="dom-link dom-link-3 dom-link-4 dom-link-9" href="#">Contact</a>
-      </div>
+        
     </div>
+  </div>
+    
